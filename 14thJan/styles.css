@@ -50,7 +50,7 @@ nav{
 .feature{
     position: absolute;
     display: flex;
-    color: #fffff;
+    color: #fff;
 
 }
 .feature div{
@@ -74,4 +74,15 @@ nav{
     border-right: 500px solid #ffff;
     border-left: 500px solid #ffff;
     position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.one{
+    top: 450px;
+    right: 50px;
+}
+.two{
+    top: 150px;
+
 }
