@@ -33,3 +33,6 @@ console.log(first)
 
 // -----------------------------------------
 // get attributes of html tags like href
+
+var atag=document.querySelector(".atag")
+console.log(atag.getAttributes("href"))
