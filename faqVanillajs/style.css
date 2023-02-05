@@ -1,0 +1,13 @@
+body{
+    background-color: #f3558e;
+    
+}
+h1{
+    text-align: center;
+}
+.faq{
+    background-color: #e2f3f5;
+    margin: 30px;
+    padding: 40px;
+    border: 2px solid black;
+}

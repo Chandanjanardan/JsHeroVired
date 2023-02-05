@@ -16,7 +16,14 @@
         el.appendChild(contain);
 
         var loc=document.getElementById("para");
-        document.body.appendChild(el,loc)
+        document.body.firstElementChild.appendChild(el);
+       var loc1= document.body.appendChild("parent")
+       loc1.style.background="yellow";
+
+    //    removing exsisting element 
+    var parent=document.getElementById("parent");
+    var child=document.document.getElementById("para")
+    parent.removeChild(child)
     </script>
 </body>
 </html>
