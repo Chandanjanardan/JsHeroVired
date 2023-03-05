@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Search GitHub Users</title>
+  </head>
+  <body>
+    <label for="search-box">Search for a GitHub user:</label>
+    <input type="text" id="search-box" name="search-box">
+    <button id="search-button">Search</button>
+
+    <div id="user-info"></div>
+
+    <script>
+
+const searchBox = document.getElementById('search-box');
+const searchButton = document.getElementById('search-button');
+
+searchButton.addEventListener('click', () => {
+  const searchQuery = searchBox.value;
+  const apiUrl = `https://api.github.com/users/${searchQuery}`;
+
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+    })
+    .catch(error => {
+      console.error(error);
+    });
+});
+     <script/>
