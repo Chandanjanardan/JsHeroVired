@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log("hello")
+        // function learner(){
+        //     this.id=345
+        //     this.name= "Chandy"
+        // }
+        // const obj1= new learner()
+        // learner.prototype.id=123
+        // console.log(obj1)
+        // const learner ={
+        //     active :true,
+        //     details:()=>{
+        //         console.log(`Hello ${this.name}`)
+        //     }
+        // }
+        // const obj1 = Object.create(learner)
+        // console.log(obj1.active)
+        // obj1.active=false;
+        // console.log(obj1.active)
+        // class Login{
+        //     #password
+        //     constructor(name,username,password){
+        //         this.name=name;
+        //         this.username=username;
+        //         this.#password=password;
+        //     }
+        //     loginSuccess(username,password){
+        //         if(username ===this.username && password===this.#password){
+        //             console.log(`Hi ${username} you are logged in`)
+        //         }else{
+        //             console.log("Try again")
+        //         }
+        //     }
+        //     getPassword(){
+        //         return this.#password;
+        //     }
+        //     setPassword(newPassword){
+        //         this.#password = newPassword
+
+        //     }
+        // }
+        // const person1 = new Login("Chandy","Chandy","1234")
+        // person1.loginSuccess("Chandy","1234")
+        // console.log(person1.password)
+        // console.log(person1.getPassword());
+        // person1.setPassword("9999")
+        // console.log(person1.getPassword())
+    for (var id = 0; id < 3; id++) {
+    setTimeout(function () {
+        console.log('seconds: ' + id);
+    },id * 1000);
+    }
+    for (var id = 0; id < 3; id++) {
+    setTimeout(function () {
+        console.log('seconds: ' + id);
+    },id * 1000);
+}
+
+for (var id = 1; id <= 3; id ++) {
+    (function (id) {
+        setTimeout(function () {
+            console.log('seconds: ' + id);
+        }, id* 1000);
+    })(id);
+}
+    </script>
+</body>
+</html>
