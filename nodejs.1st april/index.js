@@ -1,6 +1,8 @@
-const fs= require("fs")
-console.loga("./Node.txt","utf-8",(err,data)=>{
-    console.log("we are inside callbqck fn",data)
-})
+// function as an argument to another function : callback
+// returning a function: clouser
 
-console.loga("end")
+const fs = require("fs");
+// reading a file
+
+// write file
+fs.writeFile()
